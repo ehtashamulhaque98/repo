@@ -1,0 +1,213 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Ehtas\\source\\repos\\ECommerce\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3A9149B8-21C0-40D4-B1B3-B8C7EF94C4B1}|ECommerce\\ECommerce.csproj|c:\\users\\ehtas\\source\\repos\\ecommerce\\ecommerce\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A9149B8-21C0-40D4-B1B3-B8C7EF94C4B1}|ECommerce\\ECommerce.csproj|solutionrelative:ecommerce\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A9149B8-21C0-40D4-B1B3-B8C7EF94C4B1}|ECommerce\\ECommerce.csproj|c:\\users\\ehtas\\source\\repos\\ecommerce\\ecommerce\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A9149B8-21C0-40D4-B1B3-B8C7EF94C4B1}|ECommerce\\ECommerce.csproj|solutionrelative:ecommerce\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A9149B8-21C0-40D4-B1B3-B8C7EF94C4B1}|ECommerce\\ECommerce.csproj|c:\\users\\ehtas\\source\\repos\\ecommerce\\ecommerce\\models\\bookwriter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A9149B8-21C0-40D4-B1B3-B8C7EF94C4B1}|ECommerce\\ECommerce.csproj|solutionrelative:ecommerce\\models\\bookwriter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A9149B8-21C0-40D4-B1B3-B8C7EF94C4B1}|ECommerce\\ECommerce.csproj|c:\\users\\ehtas\\source\\repos\\ecommerce\\ecommerce\\models\\bookcover.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A9149B8-21C0-40D4-B1B3-B8C7EF94C4B1}|ECommerce\\ECommerce.csproj|solutionrelative:ecommerce\\models\\bookcover.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A9149B8-21C0-40D4-B1B3-B8C7EF94C4B1}|ECommerce\\ECommerce.csproj|c:\\users\\ehtas\\source\\repos\\ecommerce\\ecommerce\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A9149B8-21C0-40D4-B1B3-B8C7EF94C4B1}|ECommerce\\ECommerce.csproj|solutionrelative:ecommerce\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A9149B8-21C0-40D4-B1B3-B8C7EF94C4B1}|ECommerce\\ECommerce.csproj|c:\\users\\ehtas\\source\\repos\\ecommerce\\ecommerce\\ecommerce.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{3A9149B8-21C0-40D4-B1B3-B8C7EF94C4B1}|ECommerce\\ECommerce.csproj|solutionrelative:ecommerce\\ecommerce.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A9149B8-21C0-40D4-B1B3-B8C7EF94C4B1}|ECommerce\\ECommerce.csproj|c:\\users\\ehtas\\source\\repos\\ecommerce\\ecommerce\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A9149B8-21C0-40D4-B1B3-B8C7EF94C4B1}|ECommerce\\ECommerce.csproj|solutionrelative:ecommerce\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A9149B8-21C0-40D4-B1B3-B8C7EF94C4B1}|ECommerce\\ECommerce.csproj|c:\\users\\ehtas\\source\\repos\\ecommerce\\ecommerce\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A9149B8-21C0-40D4-B1B3-B8C7EF94C4B1}|ECommerce\\ECommerce.csproj|solutionrelative:ecommerce\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A9149B8-21C0-40D4-B1B3-B8C7EF94C4B1}|ECommerce\\ECommerce.csproj|c:\\users\\ehtas\\source\\repos\\ecommerce\\ecommerce\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A9149B8-21C0-40D4-B1B3-B8C7EF94C4B1}|ECommerce\\ECommerce.csproj|solutionrelative:ecommerce\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A9149B8-21C0-40D4-B1B3-B8C7EF94C4B1}|ECommerce\\ECommerce.csproj|c:\\users\\ehtas\\source\\repos\\ecommerce\\ecommerce\\models\\employeess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A9149B8-21C0-40D4-B1B3-B8C7EF94C4B1}|ECommerce\\ECommerce.csproj|solutionrelative:ecommerce\\models\\employeess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A9149B8-21C0-40D4-B1B3-B8C7EF94C4B1}|ECommerce\\ECommerce.csproj|c:\\users\\ehtas\\source\\repos\\ecommerce\\ecommerce\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A9149B8-21C0-40D4-B1B3-B8C7EF94C4B1}|ECommerce\\ECommerce.csproj|solutionrelative:ecommerce\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A9149B8-21C0-40D4-B1B3-B8C7EF94C4B1}|ECommerce\\ECommerce.csproj|c:\\users\\ehtas\\source\\repos\\ecommerce\\ecommerce\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{3A9149B8-21C0-40D4-B1B3-B8C7EF94C4B1}|ECommerce\\ECommerce.csproj|solutionrelative:ecommerce\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Book.cs",
+              "DocumentMoniker": "C:\\Users\\Ehtas\\source\\repos\\ECommerce\\ECommerce\\Models\\Book.cs",
+              "RelativeDocumentMoniker": "ECommerce\\Models\\Book.cs",
+              "ToolTip": "C:\\Users\\Ehtas\\source\\repos\\ECommerce\\ECommerce\\Models\\Book.cs",
+              "RelativeToolTip": "ECommerce\\Models\\Book.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T09:45:43.931Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BookWriter.cs",
+              "DocumentMoniker": "C:\\Users\\Ehtas\\source\\repos\\ECommerce\\ECommerce\\Models\\BookWriter.cs",
+              "RelativeDocumentMoniker": "ECommerce\\Models\\BookWriter.cs",
+              "ToolTip": "C:\\Users\\Ehtas\\source\\repos\\ECommerce\\ECommerce\\Models\\BookWriter.cs",
+              "RelativeToolTip": "ECommerce\\Models\\BookWriter.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T09:40:21.24Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CategoryController.cs",
+              "DocumentMoniker": "C:\\Users\\Ehtas\\source\\repos\\ECommerce\\ECommerce\\Controllers\\CategoryController.cs",
+              "RelativeDocumentMoniker": "ECommerce\\Controllers\\CategoryController.cs",
+              "ToolTip": "C:\\Users\\Ehtas\\source\\repos\\ECommerce\\ECommerce\\Controllers\\CategoryController.cs",
+              "RelativeToolTip": "ECommerce\\Controllers\\CategoryController.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAAAwCIAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T07:51:26.223Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BookCover.cs",
+              "DocumentMoniker": "C:\\Users\\Ehtas\\source\\repos\\ECommerce\\ECommerce\\Models\\BookCover.cs",
+              "RelativeDocumentMoniker": "ECommerce\\Models\\BookCover.cs",
+              "ToolTip": "C:\\Users\\Ehtas\\source\\repos\\ECommerce\\ECommerce\\Models\\BookCover.cs",
+              "RelativeToolTip": "ECommerce\\Models\\BookCover.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T09:46:08.433Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ApplicationDBContext.cs",
+              "DocumentMoniker": "C:\\Users\\Ehtas\\source\\repos\\ECommerce\\ECommerce\\Data\\ApplicationDBContext.cs",
+              "RelativeDocumentMoniker": "ECommerce\\Data\\ApplicationDBContext.cs",
+              "ToolTip": "C:\\Users\\Ehtas\\source\\repos\\ECommerce\\ECommerce\\Data\\ApplicationDBContext.cs",
+              "RelativeToolTip": "ECommerce\\Data\\ApplicationDBContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T10:03:10.537Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Category.cs",
+              "DocumentMoniker": "C:\\Users\\Ehtas\\source\\repos\\ECommerce\\ECommerce\\Models\\Category.cs",
+              "RelativeDocumentMoniker": "ECommerce\\Models\\Category.cs",
+              "ToolTip": "C:\\Users\\Ehtas\\source\\repos\\ECommerce\\ECommerce\\Models\\Category.cs",
+              "RelativeToolTip": "ECommerce\\Models\\Category.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T07:48:01.578Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "C:\\Users\\Ehtas\\source\\repos\\ECommerce\\ECommerce\\Models\\Employee.cs",
+              "RelativeDocumentMoniker": "ECommerce\\Models\\Employee.cs",
+              "ToolTip": "C:\\Users\\Ehtas\\source\\repos\\ECommerce\\ECommerce\\Models\\Employee.cs",
+              "RelativeToolTip": "ECommerce\\Models\\Employee.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T10:47:33.03Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ECommerce.csproj",
+              "DocumentMoniker": "C:\\Users\\Ehtas\\source\\repos\\ECommerce\\ECommerce\\ECommerce.csproj",
+              "RelativeDocumentMoniker": "ECommerce\\ECommerce.csproj",
+              "ToolTip": "C:\\Users\\Ehtas\\source\\repos\\ECommerce\\ECommerce\\ECommerce.csproj",
+              "RelativeToolTip": "ECommerce\\ECommerce.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-10-17T07:43:50.881Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Ehtas\\source\\repos\\ECommerce\\ECommerce\\Program.cs",
+              "RelativeDocumentMoniker": "ECommerce\\Program.cs",
+              "ToolTip": "C:\\Users\\Ehtas\\source\\repos\\ECommerce\\ECommerce\\Program.cs",
+              "RelativeToolTip": "ECommerce\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAABSAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T08:17:48.183Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Employeess.cs",
+              "DocumentMoniker": "C:\\Users\\Ehtas\\source\\repos\\ECommerce\\ECommerce\\Models\\Employeess.cs",
+              "RelativeDocumentMoniker": "ECommerce\\Models\\Employeess.cs",
+              "ToolTip": "C:\\Users\\Ehtas\\source\\repos\\ECommerce\\ECommerce\\Models\\Employeess.cs",
+              "RelativeToolTip": "ECommerce\\Models\\Employeess.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T04:58:53.765Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\Ehtas\\source\\repos\\ECommerce\\ECommerce\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "ECommerce\\Models\\Product.cs",
+              "ToolTip": "C:\\Users\\Ehtas\\source\\repos\\ECommerce\\ECommerce\\Models\\Product.cs",
+              "RelativeToolTip": "ECommerce\\Models\\Product.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T10:18:31.643Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Ehtas\\source\\repos\\ECommerce\\ECommerce\\appsettings.json",
+              "RelativeDocumentMoniker": "ECommerce\\appsettings.json",
+              "ToolTip": "C:\\Users\\Ehtas\\source\\repos\\ECommerce\\ECommerce\\appsettings.json",
+              "RelativeToolTip": "ECommerce\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-10-17T10:09:22.658Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
