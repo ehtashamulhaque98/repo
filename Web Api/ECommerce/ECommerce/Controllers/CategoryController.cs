@@ -148,15 +148,6 @@ namespace ECommerce.Controllers
         //return listofCategories[;
         //}
 
-
-        //[HttpPost]
-        //public async  void Post([FromBody] Category category)
-        //{
-        //string connectionString = @"DefaultEndpointsProtocol=https;AccountName=shopingstore;AccountKey=FxIdaSoS6CLRGsfdxGoNzVrvAGmywj6Lnobedi3NN+1u/G5NOOY+QilHmEqG4jd8AGyHvEWfpkgb+ASt4zOcqQ==;EndpointSuffix=core.windows.net";
-        //string containerName = "shopingstore";
-        //BlobContainerClient containerClient = new BlobContainerClient();
-
-
         //await _context.Categories.AddAsync(category);
         //await _context.SaveChangesAsync();
         //return StatusCode(StatusCode.Status201Created);
