@@ -1,0 +1,798 @@
+﻿@* @{
+    ViewData["Title"] = "Home Page";
+} *@
+
+@* <div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <button id="callApiBtn" class="btn btn">Call API</button>
+            <br />
+            <h3 id="apiResult"></h3> *@
+
+
+            @*  <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter Name">
+            </div>
+            <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Surname</label>
+            <input type="text" class="form-control" id="surname" placeholder="Enter SurName">
+            </div>
+            <br/>
+            <button class="btn btn-info" onclick="Display()">Submit</button>
+            <br/>
+            <h3 id="result"></h3> *@
+
+            @*  <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">First Number</label>
+            <input type="text" class="form-control" id="num1" placeholder="Enter First Number">
+            </div>
+            <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Second Number</label>
+            <input type="text" class="form-control" id="num2" placeholder="Enter Second Number">
+            </div>
+            <br />
+            <button class="btn btn-info" onclick="Display()">Submit</button>
+            <br />
+            <h3 id="result"></h3> *@
+
+@* 
+        </div>
+    </div>
+
+</div>
+ *@
+
+@* <script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        $("#callApiBtn").click(function () {
+            $.ajax({
+                url: 'http://localhost:5154/api/Employees/GetAllEmployees',
+
+                type: 'GET',
+                success: function (response) {
+                    $("#apiResult").text("API Response: " + JSON.stringify(response));
+                },
+                error: function (error) {
+                    $("#apiResult").text("Error Occurred: " + error.statusText);
+                } *@
+
+    // function Display()
+    // {
+    //     var name = $("#name").val();
+    //     var surname = $("#surname").val();
+
+
+    //     var data = name + "  " + surname;
+
+    //     $("#result").text(data);
+    // }
+
+    // function Display() {
+    //     var num1 = parseInt($("#num1").val());
+    //     var num2 = parseInt($("#num2").val());
+
+
+    //     var data = num1 + num2;
+
+    //     $("#result").text(data);
+    // }
+
+
+ @* </script> *@
+
+
+@*  Employees. *@
+@* <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haque Software Company</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- Include jQuery -->
+</head>
+<body>
+    <header>
+        <h1>Haque Software Company</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#employees">Employees</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We provide custom software solutions and development services.</p>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <ul>
+            <li>Custom Software Development</li>
+            <li>Web Development</li>
+            <li>Mobile App Development</li>
+        </ul>
+    </section>
+
+    <section id="employees">
+        <h2>Employees</h2>
+
+        <!-- Employee Form -->
+        <form id="employeeForm">
+            <input type="hidden" id="employeeId" name="employeeId">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phoneNumber">Phone Number:</label>
+            <input type="text" id="phoneNumber" name="phoneNumber" required>
+
+            <label for="gender">Gender:</label>
+            <input type="text" id="gender" name="gender" required>
+
+            <label for="departmentId">Department ID:</label>
+            <input type="number" id="departmentId" name="departmentId" required>
+
+            <label for="hireDate">Hire Date:</label>
+            <input type="date" id="hireDate" name="hireDate" required>
+
+            <label for="salary">Salary:</label>
+            <input type="number" id="salary" name="salary" required>
+
+            <button type="submit">Save Employee</button>
+        </form>
+
+        <h3>Employee List</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone Number</th>
+                    <th>Gender</th>
+                    <th>Department ID</th>
+                    <th>Hire Date</th>
+                    <th>Salary</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="employee-list">
+            </tbody>
+        </table>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Haque Software Company. All rights reserved.</p>
+    </footer>
+
+    <script>
+         $(document).ready(function () {
+             loadEmployees(); // Load employees when the page is ready
+
+            // Submit the form to save or update employee
+            // $("#employeeForm").submit(function (event) {
+            //     event.preventDefault(); // Prevent the default form submission
+
+                const employeeData = {
+                    EmployeeID: $("#employeeId").val(),
+                    Name: $("#name").val(),
+                    Email: $("#email").val(),
+                    PhoneNumber: $("#phoneNumber").val(),
+                    Gender: $("#gender").val(),
+                    DepartmentID: $("#departmentId").val(),
+                    HireDate: $("#hireDate").val(),
+                    Salary: $("#salary").val()
+                };
+
+                const apiUrl = employeeData.EmployeeID ?
+                    `http://localhost:5154/api/Employees/${employeeData.EmployeeID}` :
+                    'http://localhost:5154/api/Employees';
+
+                const method = employeeData.EmployeeID ? 'PUT' : 'POST';
+
+                $.ajax({
+                    url: apiUrl,
+                    type: method,
+                    contentType: 'application/json',
+                    data: JSON.stringify(employeeData),
+                    success: function (response) {
+                        alert("Employee saved successfully!");
+                        loadEmployees(); // Refresh the employee list
+                        clearForm(); // Clear the form
+                    },
+                    error: function (error) {
+                        alert("Error occurred: " + error.statusText);
+                    }
+                });
+            });
+
+            // Function to load employees from the API
+            function loadEmployees() {
+                $.ajax({
+                    url: 'http://localhost:5154/api/Employees',
+                    type: 'GET',
+                    success: function (response) {
+                        $("#employee-list").empty(); // Clear the existing list
+                        response.forEach(employee => {
+                            $("#employee-list").append(`
+                                        <tr>
+                                            <td>${employee.name}</td>
+                                            <td>${employee.email}</td>
+                                            <td>${employee.phoneNumber}</td>
+                                            <td>${employee.gender}</td>
+                                            <td>${employee.departmentID}</td>
+                                            <td>${new Date(employee.hireDate).toLocaleDateString()}</td>
+                                            <td>${employee.salary}</td>
+                                            <td>
+                                                <button onclick="editEmployee(${employee.employeeID})">Edit</button>
+                                                <button onclick="deleteEmployee(${employee.employeeID})">Delete</button>
+                                            </td>
+                                        </tr>
+                                    `);
+                        });
+                    },
+                    error: function (error) {
+                        alert("Error loading employees: " + error.statusText);
+                    }
+                });
+            }
+
+            // Edit employee
+            window.editEmployee = function (id) {
+                $.ajax({
+                    url: `http://localhost:5154/api/Employees/${id}`,
+                    type: 'GET',
+                    success: function (employee) {
+                        $("#employeeId").val(employee.employeeID);
+                        $("#name").val(employee.name);
+                        $("#email").val(employee.email);
+                        $("#phoneNumber").val(employee.phoneNumber);
+                        $("#gender").val(employee.gender);
+                        $("#departmentId").val(employee.departmentID);
+                        $("#hireDate").val(new Date(employee.hireDate).toISOString().split('T')[0]);
+                        $("#salary").val(employee.salary);
+                    },
+                    error: function (error) {
+                        alert("Error loading employee data: " + error.statusText);
+                    }
+                });
+            };
+
+            // Delete employee
+            window.deleteEmployee = function (id) {
+                if (confirm("Are you sure you want to delete this employee?")) {
+                    $.ajax({
+                        url: `http://localhost:5154/api/Employees/${id}`,
+                        type: 'DELETE',
+                        success: function () {
+                            alert("Employee deleted successfully!");
+                            loadEmployees(); // Refresh the employee list
+                        },
+                        error: function (error) {
+                            alert("Error deleting employee: " + error.statusText);
+                        }
+                    });
+                }
+            };
+
+            // Clear form fields
+            function clearForm() {
+                $("#employeeId").val('');
+                $("#name").val('');
+                $("#email").val('');
+                $("#phoneNumber").val('');
+                $("#gender").val('');
+                $("#departmentId").val('');
+                $("#hireDate").val('');
+                $("#salary").val('');
+            }
+        });
+    </script>
+</body>
+</html> *@
+
+ @* Client  *@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Management</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Client Management</h1>
+    </header>
+
+    <section id="clients">
+        <h2>Clients</h2>
+
+        <!-- Client Form -->
+        <form id="clientForm">
+            <input type="hidden" id="clientId" name="clientId">
+            <label for="clientName">Name:</label>
+            <input type="text" id="clientName" name="clientName" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phoneNumber">Phone Number:</label>
+            <input type="text" id="phoneNumber" name="phoneNumber" required>
+
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required>
+
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" required>
+
+            <label for="country">Country:</label>
+            <input type="text" id="country" name="country" required>
+
+            <button type="submit">Save Client</button>
+        </form>
+
+        <h3>Client List</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone Number</th>
+                    <th>Address</th>
+                    <th>City</th>
+                    <th>Country</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="client-list">
+            </tbody>
+        </table>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Client Management. All rights reserved.</p>
+    </footer>
+
+    <script>
+        $(document).ready(function () {
+            loadClients();
+
+            // Handle form submit for create/update
+            $('#clientForm').submit(function (event) {
+                event.preventDefault();
+
+                const client = {
+                    ClientName: $('#clientName').val(),
+                    Email: $('#email').val(),
+                    PhoneNumber: $('#phoneNumber').val(),
+                    Address: $('#address').val(),
+                    City: $('#city').val(),
+                    Country: $('#country').val()
+                };
+
+                const clientId = $('#clientId').val();
+
+                if (clientId) {
+                    updateClient(clientId, client);
+                } else {
+                    createClient(client);
+                }
+            });
+
+            function loadClients() {
+                $.ajax({
+                    url: 'http://localhost:5154/api/Clients',
+                    type: 'GET',
+                    success: function (data) {
+                        const clientList = $('#client-list');
+                        clientList.empty();
+                        data.forEach(client => {
+                            clientList.append(`
+                                        <tr>
+                                            <td>${client.ClientName}</td>
+                                            <td>${client.Email}</td>
+                                            <td>${client.PhoneNumber}</td>
+                                            <td>${client.Address}</td>
+                                            <td>${client.City}</td>
+                                            <td>${client.Country}</td>
+                                            <td>
+                                                <button onclick="editClient(${client.ClientID})">Edit</button>
+                                                <button onclick="deleteClient(${client.ClientID})">Delete</button>
+                                            </td>
+                                        </tr>
+                                    `);
+                        });
+                    }
+                });
+            }
+
+            function createClient(client) {
+                $.ajax({
+                    url: 'http://localhost:5154/api/Clients',
+                    type: 'POST',
+                    contentType: 'application/json',
+                    data: JSON.stringify(client),
+                    success: function () {
+                        alert('Client created successfully');
+                        $('#clientForm')[0].reset();
+                        loadClients();
+                    },
+                    error: function () {
+                        alert('Failed to create client');
+                    }
+                });
+            }
+
+            function updateClient(id, client) {
+                $.ajax({
+                    url: 'http://localhost:5154/api/Clients/' + id,
+                    type: 'PUT',
+                    contentType: 'application/json',
+                    data: JSON.stringify(client),
+                    success: function () {
+                        alert('Client updated successfully');
+                        $('#clientForm')[0].reset();
+                        $('#clientId').val('');
+                        loadClients();
+                    },
+                    error: function () {
+                        alert('Failed to update client');
+                    }
+                });
+            }
+
+            window.editClient = function (id) {
+                $.ajax({
+                    url: 'http://localhost:5154/api/Clients/' + id,
+                    type: 'GET',
+                    success: function (client) {
+                        $('#clientId').val(client.ClientID);
+                        $('#clientName').val(client.ClientName);
+                        $('#email').val(client.Email);
+                        $('#phoneNumber').val(client.PhoneNumber);
+                        $('#address').val(client.Address);
+                        $('#city').val(client.City);
+                        $('#country').val(client.Country);
+                    }
+                });
+            };
+
+            window.deleteClient = function (id) {
+                if (confirm('Are you sure you want to delete this client?')) {
+                    $.ajax({
+                        url: 'http://localhost:5154/api/Clients/' + id,
+                        type: 'DELETE',
+                        success: function () {
+                            alert('Client deleted successfully');
+                            loadClients();
+                        },
+                        error: function () {
+                            alert('Failed to delete client');
+                        }
+                    });
+                }
+            };
+        });
+    </script>
+</body>
+</html>
+
+
+@* Department *@
+
+
+@* <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Department Management</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Department Management</h1>
+    </header>
+
+    <section id="departments">
+        <h2>Departments</h2>
+
+        <!-- Department Form -->
+        <form id="departmentForm">
+            <input type="hidden" id="departmentId" name="departmentId">
+            <label for="departmentName">Department Name:</label>
+            <input type="text" id="departmentName" name="departmentName" required>
+            <button type="submit">Save Department</button>
+        </form>
+
+        <h3>Department List</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Department Name</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="department-list">
+            </tbody>
+        </table>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Haque Software Company. All rights reserved.</p>
+    </footer>
+
+    <script src="department-management.js"></script> <!-- Separate JS file -->
+</body>
+</html>
+
+$(document).ready(function() {
+    // Function to fetch departments and display in the table
+    function fetchDepartments() {
+        $.ajax({
+            url: 'http://localhost:5154/api/Departments',
+            type: 'GET',
+            success: function(departments) {
+                $('#department-list').empty(); // Clear existing table
+                departments.forEach(department => {
+                    $('#department-list').append(`
+<tr>
+    <td>${department.DepartmentName}</td>
+    <td>
+        <button class="edit-btn" data-id="${department.DepartmentID}">Edit</button>
+        <button class="delete-btn" data-id="${department.DepartmentID}">Delete</button>
+    </td>
+</tr>
+                    `);
+                });
+            },
+            error: function(xhr) {
+                alert('Error fetching departments: ' + xhr.responseText);
+            }
+        });
+    }
+
+    // Fetch departments when the page loads
+    fetchDepartments();
+
+    // Handle form submission
+    $('#departmentForm').on('submit', function(event) {
+        event.preventDefault(); // Prevent default form submission
+
+        const departmentData = {
+            DepartmentName: $('#departmentName').val()
+        };
+
+        const departmentId = $('#departmentId').val();
+        const requestType = departmentId ? 'PUT' : 'POST'; // Determine request type
+
+        $.ajax({
+            url: departmentId ? `http://localhost:5154/api/Departments/${departmentId}` : 'http://localhost:5154/api/Departments',
+            type: requestType,
+            contentType: 'application/json',
+            data: JSON.stringify(departmentData),
+            success: function(response) {
+                alert(departmentId ? 'Department updated successfully!' : 'Department created successfully!');
+                $('#departmentForm')[0].reset(); // Reset form
+                $('#departmentId').val(''); // Clear department ID
+                fetchDepartments(); // Refresh department list
+            },
+            error: function(xhr) {
+                alert('Error saving department: ' + xhr.responseText);
+            }
+        });
+    });
+
+    // Handle edit button click
+    $('#department-list').on('click', '.edit-btn', function() {
+        const departmentId = $(this).data('id');
+        $.ajax({
+            url: `http://localhost:5154/api/Departments/${departmentId}`,
+            type: 'GET',
+            success: function(department) {
+                $('#departmentId').val(department.DepartmentID); // Set hidden ID
+                $('#departmentName').val(department.DepartmentName); // Set name in input
+            },
+            error: function(xhr) {
+                alert('Error fetching department: ' + xhr.responseText);
+            }
+        });
+    });
+
+    // Handle delete button click
+    $('#department-list').on('click', '.delete-btn', function() {
+        const departmentId = $(this).data('id');
+        $.ajax({
+            url: `http://localhost:5154/api/Departments/${departmentId}`,
+            type: 'DELETE',
+            success: function() {
+                alert('Department deleted successfully!');
+                fetchDepartments(); // Refresh department list
+            },
+            error: function(xhr) {
+                alert('Error deleting department: ' + xhr.responseText);
+            }
+        });
+    });
+}); *@
+
+@* Project *@
+
+
+
+ 
+@* services
+ *@
+
+
+@* <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services Management</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h1>Services Management</h1>
+
+    <h2>All Services</h2>
+    <button id="loadServices">Load Services</button>
+    <table id="servicesTable" border="1">
+        <thead>
+            <tr>
+                <th>Service ID</th>
+                <th>Service Name</th>
+                <th>Description</th>
+                <th>Price</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <h2>Create Service</h2>
+    <input type="text" id="newServiceName" placeholder="Service Name" />
+    <input type="text" id="newDescription" placeholder="Description" />
+    <input type="number" id="newPrice" placeholder="Price" />
+    <button id="createService">Create Service</button>
+
+    <h2>Update Service</h2>
+    <input type="number" id="updateServiceID" placeholder="Service ID" />
+    <input type="text" id="updateServiceName" placeholder="Service Name" />
+    <input type="text" id="updateDescription" placeholder="Description" />
+    <input type="number" id="updatePrice" placeholder="Price" />
+    <button id="updateService">Update Service</button>
+
+    <h2>Delete Service</h2>
+    <input type="number" id="deleteServiceID" placeholder="Service ID" />
+    <button id="deleteServiceBtn">Delete Service</button>
+
+    <script src="services.js"></script>
+</body>
+</html>
+
+$(document).ready(function() {
+    const apiUrl = 'http://localhost:5154/api/Services';
+
+    // Load all services
+    $('#loadServices').click(function() {
+        $.get(apiUrl, function(data) {
+            const tbody = $('#servicesTable tbody');
+            tbody.empty();
+            data.forEach(service => {
+                tbody.append(`
+<tr>
+    <td>${service.serviceID}</td>
+    <td>${service.serviceName}</td>
+    <td>${service.description}</td>
+    <td>${service.price}</td>
+    <td>
+        <button class="editBtn" data-id="${service.serviceID}">Edit</button>
+    </td>
+</tr>
+                `);
+            });
+        }).fail(function(xhr) {
+            alert("Error loading services: " + xhr.responseText);
+        });
+    });
+
+    // Create a new service
+    $('#createService').click(function() {
+        const newService = {
+            serviceName: $('#newServiceName').val(),
+            description: $('#newDescription').val(),
+            price: $('#newPrice').val(),
+        };
+
+        $.post(apiUrl, newService, function(response) {
+            alert(response);
+            $('#loadServices').click(); // Refresh the services list
+        }).fail(function(xhr) {
+            alert("Error creating service: " + xhr.responseText);
+        });
+    });
+
+    // Update a service
+    $('#updateService').click(function() {
+        const id = $('#updateServiceID').val();
+        const updatedService = {
+            serviceName: $('#updateServiceName').val(),
+            description: $('#updateDescription').val(),
+            price: $('#updatePrice').val(),
+        };
+
+        $.ajax({
+            url: `${apiUrl}/${id}`,
+            type: 'PUT',
+            data: JSON.stringify(updatedService),
+            contentType: 'application/json',
+            success: function() {
+                alert("Service updated successfully");
+                $('#loadServices').click(); // Refresh the services list
+            },
+            error: function(xhr) {
+                alert("Error updating service: " + xhr.responseText);
+            }
+        });
+    });
+
+    // Delete a service
+    $('#deleteServiceBtn').click(function() {
+        const id = $('#deleteServiceID').val();
+
+        $.ajax({
+            url: `${apiUrl}/${id}`,
+            type: 'DELETE',
+            success: function() {
+                alert("Service deleted successfully");
+                $('#loadServices').click(); // Refresh the services list
+            },
+            error: function(xhr) {
+                alert("Error deleting service: " + xhr.responseText);
+            }
+        });
+    });
+
+    // Edit service on button click
+    $(document).on('click', '.editBtn', function() {
+        const serviceID = $(this).data('id');
+        // Fetch service details to fill in update fields
+        $.get(`${apiUrl}/${serviceID}`, function(service) {
+            $('#updateServiceID').val(service.serviceID);
+            $('#updateServiceName').val(service.serviceName);
+            $('#updateDescription').val(service.description);
+            $('#updatePrice').val(service.price);
+        }).fail(function(xhr) {
+            alert("Error fetching service details: " + xhr.responseText);
+        });
+    });
+}); *@
+
+
+
+
+
+
+
+
+

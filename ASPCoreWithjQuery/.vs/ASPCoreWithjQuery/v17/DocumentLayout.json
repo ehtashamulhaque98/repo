@@ -1,0 +1,61 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Ehtas\\source\\repos\\ASPCoreWithjQuery\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{236B6A7E-390A-43B5-A053-63A359220C16}|ASPCoreWithjQuery\\ASPCoreWithjQuery.csproj|c:\\users\\ehtas\\source\\repos\\aspcorewithjquery\\aspcorewithjquery\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{236B6A7E-390A-43B5-A053-63A359220C16}|ASPCoreWithjQuery\\ASPCoreWithjQuery.csproj|solutionrelative:aspcorewithjquery\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{236B6A7E-390A-43B5-A053-63A359220C16}|ASPCoreWithjQuery\\ASPCoreWithjQuery.csproj|c:\\users\\ehtas\\source\\repos\\aspcorewithjquery\\aspcorewithjquery\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{236B6A7E-390A-43B5-A053-63A359220C16}|ASPCoreWithjQuery\\ASPCoreWithjQuery.csproj|solutionrelative:aspcorewithjquery\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\Ehtas\\source\\repos\\ASPCoreWithjQuery\\ASPCoreWithjQuery\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "ASPCoreWithjQuery\\wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\Ehtas\\source\\repos\\ASPCoreWithjQuery\\ASPCoreWithjQuery\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "ASPCoreWithjQuery\\wwwroot\\css\\site.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB8AAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-10-24T09:07:14.638Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Ehtas\\source\\repos\\ASPCoreWithjQuery\\ASPCoreWithjQuery\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "ASPCoreWithjQuery\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Ehtas\\source\\repos\\ASPCoreWithjQuery\\ASPCoreWithjQuery\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "ASPCoreWithjQuery\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAB8BAAAAAAAAAAAAADcBAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-24T06:30:40.948Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
